@@ -2,63 +2,45 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="./bower_components/normalize.css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="./bower_components/typeplate-starter-kit/css/typeplate.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <title></title>
+    <link rel="stylesheet" type="text/css" href="./bower_components/normalize.css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./bower_components/typeplate-starter-kit/css/typeplate.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title></title>
 </head>
 
 <body>
 
 
-    <div id="container">
+  <body>
+<div class="w">
+<span id="Name"><h1>BOOK <img src="./2.svg">   SNOB</h1></span>
 
-        <div id="header">
-            <span id="one">BOOK</span>
-            <form>
-                <!--  <input type="submit" value="Search"> -->
+<section class="container">
+  <label for="genre"></label>
+  <form>
+  <input class="genre" 
+         name="genre"
+         id="bookfull" 
+         type="search"
+         placeholder="Search Genre">
 
-                <input type="text" name="genre" placeholder="Type Genre">
-                <button class="button">Submit</button>
-                <span id="two">SNOB</span>
-            </form>
+<a href="#" id="button"></a></form>
+</section>
+<div id="loading"></div>
 
-        </div>
+    <div id="booklistings" class="clearfix grid grid-3-800"></div>
 
-        <div class="grid grid-3-800" id="booklistings"></div>
-
-        <div class="rightContainer" id="bookdetail"></div>
-
-        <div id="footer">
-            
-        </div>
-
-    </div>
+</div>    
 
     <script type="text/javascript" src="./bower_components/Loader/loader.js" id="loaderjs" data-app="./js/app.js"></script>
 
+  
+<script>
+  $('#button').on('click', function(e){
+    e.preventDefault();
+    $('#booklistings').html('<div id="loader"><img src="css/loader.gif" alt="loading..."></div>');
 
-    <script id="bookTemplate" type="text/template">
-        <img src={volumeInfo.imageLinks.thumbnail}/>
-        <ul>
-            <li>
-                <h4>{volumeInfo.title}</h4>
-            </li>
-            <li>{volumeInfo.authors}</li>
-            <li>{volumeInfo.description}</li>
-        </ul>
-    </script>
-    <script id="footTemplate" type="text/template">
-        <ul>
-            <li>
-                <h4>{volumeInfo.title}</h4>
-            </li>
-            <li>
-                <h5>{volumeInfo.subtitle}</h5>
-            </li>
-        </ul>
-    </script>
-
+</script>
 
 </body>
 

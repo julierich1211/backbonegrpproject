@@ -4,8 +4,7 @@
     font: 300 1em/1.5'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     color: #666;
     padding: 0;
-    margin: -9px;
-margin-left: 6px;
+    margin: -25px;
 }
 html, body {
     background: rgb(236, 240, 241);
@@ -18,22 +17,11 @@ section.container {
 label {
     display: none;
 }
-
-a {color: red}
-
-a:active {color: blue}
-.genre:hover{
-  background-color: grey;
-}
-
-form {
-  margin-left: -116px;
-}
 input.genre {
   cursor: pointer;
     border: none;
     outline: none;
-    width: 2px;
+    width: 75px;
     border-radius: 55px;
     margin: 0 auto;
     font-size: 2em;
@@ -71,14 +59,6 @@ input[type=search]::-webkit-search-cancel-button {
     opacity: .5;
 }
 
-#loading {
-    position: absolute; 
-    width: 100%; 
-    height: 12%; 
-    background: url('http://s9.postimg.org/eikge0gu3/spinner_128_anti_alias.gif') no-repeat center center;
-    background-size: 3%;
-}
-
 h1 {
   text-shadow: 0 1px 0 #ccc,
                0 2px 0 #c9c9c9,
@@ -98,41 +78,11 @@ h1 {
 
 
 }
-.grid {
-    display: block;
-    font-size: 0;
-    text-align: justify;
-    margin-left: 400px;
-    margin-top:;
-}
-.grid:after {
-    content: "";
-    display: inline-block;
-    width: 100%;
-}
-.grid > * {
-    font-size: medium;
-vertical-align: top;
-text-align: left;
-/* background-color: darkkhaki; */
-/* text-decoration: none; */
-/* border: 2px solid black; */
-padding: 2px;
-text-align: center;
-margin-left: 30px;
-margin-bottom: 20px;
-border-style: outset;
-box-shadow: -3px 44px 67px -3px rgb(86, 81, 81);
-float: left;
-}
 
 img {
-  width:106px;
-
+  width:100px;
 }
 .shadow {
     -webkit-filter: drop-shadow( 0px 7px 2px #d3d3d3 );
             filter: drop-shadow( 0px 7px 2px #d3d3d3 ); /* Same syntax as box-shadow */
 }
-
-
